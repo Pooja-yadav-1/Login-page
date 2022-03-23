@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+
+  
+    <head>
+        <title>Firebase Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="second.css">
+    </head>
+    <body>
+   
+       <div id="login_div" class="main-div">
+           <h3>Firebase Web login </h3>
+           <input type="email" placeholder="Email Address" id="campo_email" />
+           <input type="password" placeholder="Password" id="campo_senha"/>
+   
+           <button onclick="login()">Login to Account</button>
+       </div>
+   
+       <div id="user_div" class="loggedin-div">
+           <h3>Welcome User</h3>
+           <p id="user_para">Welcome to Firebase web login. Successfully login</p>
+           <button onclick="logout()">Logout</button>
+       </div>
+   
+       
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+   <script>
+     // Initialize Firebase
+     var config = {
+      apiKey: "AIzaSyCO6vfEd4SGRFantya6oIVZqwPbdz13aV4",
+  authDomain: "login-page-fdbff.firebaseapp.com",
+  databaseURL: "https://login-page-fdbff-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "login-page-fdbff",
+  storageBucket: "login-page-fdbff.appspot.com",
+  messagingSenderId: "968161920444",
+  appId: "1:968161920444:web:ebaec37c98e17e698517b9",
+  measurementId: "G-7XTFGV5CQ9"
+     };
+     firebase.initializeApp(config);
+   </script>
+   <script src="second.js"></script>
+   
+    </body>
+   
+   
+</html>
